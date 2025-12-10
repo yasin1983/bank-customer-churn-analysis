@@ -21,7 +21,8 @@ The goal is to identify high-risk customers and support business decisions for c
 
 ---
 
-![Workflow Diagram](sql/SQL_Workflow.png)
+<img src="sql/SQL_Workflow.png" alt="Workflow Diagram" width="500"/>
+
 
 
 ## Business Questions
