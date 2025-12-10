@@ -11,33 +11,28 @@ The goal is to identify high-risk customers and support business decisions for c
 - Git, GitHub
 
 ## Folder Structure
-/data
-
-/python
-
-/sql
-
-/powerbi
+/data  
+/python  
+/sql  
+/powerbi  
 
 ---
 
 <img src="sql/SQL_Workflow.png" alt="Workflow Diagram" width="500"/>
-
-
 
 ## Business Questions
 - Which segment has the highest churn?
 - What factors influence customer churn?
 - Can churn be predicted using machine learning?
 
-## Current Stage
-- Project skeleton created
-- Folder structure ready
+## Business Insights
 
-## Next Steps
-1. SQL data cleaning
-2. Python EDA
-3. ML model
-4. Power BI dashboard
-
-Status: In progress 🚧
+### 1. Churn Rate by Geography
+```sql
+SELECT Geography,
+       COUNT(*) AS TotalCustomers,
+       SUM(CAST(Exited AS INT)) AS ChurnedCustomers,
+       ROUND(100.0 * SUM(CAST(Exited AS INT)) / COUNT(*), 2) AS ChurnRate
+FROM customers_new
+GROUP BY Geography
+ORDER BY ChurnRate DESC;
