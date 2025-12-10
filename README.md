@@ -21,7 +21,7 @@ The goal is to identify high-risk customers and support business decisions for c
 
 ---
 
-
+![Workflow Diagram](sql/SQL_Workflow.png)
 
 
 ## Business Questions
