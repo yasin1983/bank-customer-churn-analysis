@@ -12,9 +12,17 @@ The goal is to identify high-risk customers and support business decisions for c
 
 ## Folder Structure
 /data
+
 /python
+
 /sql
+
 /powerbi
+
+---
+
+
+
 
 ## Business Questions
 - Which segment has the highest churn?
@@ -31,4 +39,4 @@ The goal is to identify high-risk customers and support business decisions for c
 3. ML model
 4. Power BI dashboard
 
----
+Status: In progress 🚧
