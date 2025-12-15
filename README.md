@@ -87,6 +87,6 @@ This project analyzes customer churn for a retail bank. It combines **SQL explor
 
 ---
 
-👨‍💻 Author: **Yasin Karadag**  
+👨‍💻 Author: Yasin Karadag | Physics PhD → Data Analytics”
 📍 Vienna, Austria  
 
