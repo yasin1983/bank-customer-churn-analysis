@@ -72,10 +72,10 @@ This project analyzes customer churn for a retail bank. It combines **SQL explor
 - Google Colab (development environment)  
 
 9. ## 🚀 How to Run
-1. Open `notebooks/model_comparison.ipynb` in Colab or Jupyter Notebook.  
-2. Load the dataset from `data/churn_data.csv`.  
-3. Train and evaluate the models.  
-4. Explore the Power BI dashboard (`powerbi/dashboard.pbix`).  
+   1. Open `notebooks/model_comparison.ipynb` in Colab or Jupyter Notebook.  
+   2. Load the dataset from `data/churn_data.csv`.  
+   3. Train and evaluate the models.  
+   4. Explore the Power BI dashboard (`powerbi/dashboard.pbix`).  
 
 10. ## 📌 Business Insights
 - Churn rate: **20.37%**  
