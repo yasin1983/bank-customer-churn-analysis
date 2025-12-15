@@ -23,4 +23,26 @@ This project analyzes customer churn for a retail bank. It combines **SQL explor
    SELECT Geography, AVG(Exited) AS ChurnRate
    FROM Customers
    GROUP BY Geography;
-```
+   ```
+
+2.   **Python & Colab Modeling**
+
+Data preprocessing and dummy encoding
+
+Model training with Logistic Regression, Random Forest, and XGBoost
+
+Evaluation using Accuracy, Precision, Recall, F1, and AUC
+
+Feature importance extracted for each model
+
+3. **Power BI Dashboard**
+
+KPI cards: Accuracy, AUC, F1, Churn Rate, Exited Customers
+
+Model performance comparison (bar chart + table)
+
+Feature importance visualization
+
+Segment-based churn analysis (Age, Geography)
+
+Business actions section with recommendations
