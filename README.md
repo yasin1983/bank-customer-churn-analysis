@@ -1,38 +1,26 @@
-# Bank Customer Churn Prediction
+# Customer Churn Prediction Project
 
-## Overview
-This project analyzes customer behavior in banking and predicts churn using Machine Learning techniques. 
-The goal is to identify high-risk customers and support business decisions for customer retention.
+## 📌 Overview
+This project analyzes customer churn for a retail bank. It combines **SQL exploration**, **machine learning modeling in Python/Colab**, and a **Power BI dashboard** to deliver both technical insights and business actions.
 
-## Tools & Technologies
-- Python (Pandas, NumPy, Scikit-learn)
-- SQL
-- Power BI
-- Git, GitHub
+## 🎯 Objectives
+- Explore customer data with SQL queries  
+- Build and compare machine learning models (Logistic Regression, Random Forest, XGBoost)  
+- Visualize KPIs and feature importance in Power BI  
+- Provide actionable recommendations to reduce churn  
 
-## Folder Structure
-/data  
-/python  
-/sql  
-/powerbi  
+## 🗂️ Workflow
+1. **SQL Exploration**
+   - Initial attempts to upload CSV data into SQL Server faced file path and delimiter issues.  
+   - Once resolved, queries were used to calculate:
+     - Total customers  
+     - Number of exited customers  
+     - Churn rate  
+     - Churn by age group, geography, and gender  
 
----
-
-<img src="sql/SQL_Workflow.png" alt="Workflow Diagram" width="500"/>
-
-## Business Questions
-- Which segment has the highest churn?
-- What factors influence customer churn?
-- Can churn be predicted using machine learning?
-
-## Business Insights
-
-### 1. Churn Rate by Geography
-```sql
-SELECT Geography,
-       COUNT(*) AS TotalCustomers,
-       SUM(CAST(Exited AS INT)) AS ChurnedCustomers,
-       ROUND(100.0 * SUM(CAST(Exited AS INT)) / COUNT(*), 2) AS ChurnRate
-FROM customers_new
-GROUP BY Geography
-ORDER BY ChurnRate DESC;
+   Example:
+   ```sql
+   SELECT Geography, AVG(Exited) AS ChurnRate
+   FROM Customers
+   GROUP BY Geography;
+```
