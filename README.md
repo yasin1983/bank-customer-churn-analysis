@@ -1,6 +1,6 @@
 # Customer Churn Prediction Project
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/yasin1983/bank-customer-churn-analysis/blob/main/python/EDA_and_Model_Comparison.ipynb)]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yasin1983/bank-customer-churn-analysis/blob/main/python/EDA_and_Model_Comparison.ipynb)
 
 ## 📌 Overview
 This project analyzes customer churn for a retail bank. It combines **SQL exploration**, **machine learning modeling in Python/Colab**, and a **Power BI dashboard** to deliver both technical insights and business actions.
